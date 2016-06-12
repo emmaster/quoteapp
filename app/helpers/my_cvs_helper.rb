@@ -1,0 +1,2 @@
+module MyCvsHelper
+end

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'myquotes#index'
+  get 'cv' => 'my_cvs#index'
+  get 'social'=> 'socials#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

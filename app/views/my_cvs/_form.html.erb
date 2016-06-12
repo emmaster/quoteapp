@@ -1,0 +1,17 @@
+<%= form_for(@my_cv) do |f| %>
+  <% if @my_cv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@my_cv.errors.count, "error") %> prohibited this my_cv from being saved:</h2>
+
+      <ul>
+      <% @my_cv.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
